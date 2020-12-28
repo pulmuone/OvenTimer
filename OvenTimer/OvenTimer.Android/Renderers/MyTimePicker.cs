@@ -51,13 +51,13 @@ namespace OvenTimer.Droid.Renderers
 
     public class TimePickerDialogIntervals : TimePickerDialog
     {
-        public const int TimePickerInterval = 1;
+        //public const int TimePickerInterval = 1;
         private bool _ignoreEvent = false;
 
         public TimePickerDialogIntervals(Context context, EventHandler<TimePickerDialog.TimeSetEventArgs> callBack, int hourOfDay, int minute, bool is24HourView) : base(context, TimePickerDialog.ThemeHoloLight, (sender, e) =>
             {
-                callBack(sender, new TimePickerDialog.TimeSetEventArgs(e.HourOfDay, e.Minute * 1));
-            }, hourOfDay, minute / TimePickerInterval, is24HourView)
+                callBack(sender, new TimePickerDialog.TimeSetEventArgs(e.HourOfDay, e.Minute));
+            }, hourOfDay, minute, is24HourView)
         {
 
         }

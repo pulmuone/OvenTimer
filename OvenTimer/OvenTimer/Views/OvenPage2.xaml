@@ -6,10 +6,9 @@
              x:Class="OvenTimer.Views.OvenPage2">
     <ContentPage.Content>
 
-        <StackLayout>
-
-            <renderers:ExtendTimePicker/>
-            
+        <StackLayout Orientation="Vertical">
+            <Label x:Name="ReturnTimer"/>
+            <Button x:Name="TimerSet" Text="시간설정" Clicked="TimerSet_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
