@@ -29,5 +29,19 @@ namespace OvenTimer
 
             await Navigation.PushAsync(new OvenPage1());
         }
+
+        private async void Oven2Button_Clicked(object sender, EventArgs e)
+        {
+            foreach (var item in Navigation.NavigationStack)
+            {
+                //중복 클릭 방지
+                if (item.ToString().EndsWith("OvenPage2"))
+                {
+                    return;
+                }
+            }
+
+            await Navigation.PushAsync(new OvenPage2());
+        }
     }
 }

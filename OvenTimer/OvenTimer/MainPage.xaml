@@ -11,7 +11,7 @@
               ColumnDefinitions ="*">
 
             <Button Grid.Row="0" x:Name="Oven1Button" Text="오븐 1" FontSize="Medium" Clicked="Oven1Button_Clicked"/>
-            <Button Grid.Row="1" x:Name="Oven2Button" Text="오븐 2" FontSize="Medium" />
+            <Button Grid.Row="1" x:Name="Oven2Button" Text="오븐 2" FontSize="Medium" Clicked="Oven2Button_Clicked" />
             <Button Grid.Row="2" x:Name="Oven3Button" Text="오븐 3" FontSize="Medium" />
 
         </Grid>
